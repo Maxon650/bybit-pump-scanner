@@ -1,0 +1,11 @@
+{
+  "telegramBotToken": "REPLACE_VIA_ENV_OR_LOCAL_CONFIG",
+  "telegramChatId": 0,
+  "pumpThresholdPercent": 20,
+  "minTurnover24hUsd": 1000000,
+  "alertCooldownHours": 6,
+  "volumeSpikeMultiplier": 5,
+  "volumeSpikeMinHourTurnoverUsd": 500000,
+  "volumeSpikeMinDailyTurnoverUsd": 5000000,
+  "volumeSpikeCooldownHours": 6
+}
