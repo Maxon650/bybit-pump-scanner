@@ -26,7 +26,8 @@ function httpGet(url) {
         try {
           resolve(JSON.parse(data));
         } catch (e) {
-          reject(new Error(`Bad JSON from ${url}: ${e.message}`));
+          const preview = data.slice(0, 300).replace(/\s+/g, ' ');
+          reject(new Error(`Bad JSON from ${url} (HTTP ${res.statusCode}): ${preview}`));
         }
       });
     }).on('error', reject);
