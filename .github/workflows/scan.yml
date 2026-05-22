@@ -1,8 +1,7 @@
 name: Bybit Pump & Volume Scanner
 
 on:
-  schedule:
-    - cron: '*/15 * * * *'
+  # Schedule disabled — scanner moved to Vultr VPS (cron-based). Keep workflow_dispatch for manual runs.
   workflow_dispatch: {}
 
 permissions:
